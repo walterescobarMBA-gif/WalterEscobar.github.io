@@ -16,7 +16,7 @@
     }
 
     header {
-      background: linear-gradient(135deg, #111827, #1f2937);
+      background: linear-gradient(135deg, #0f172a, #111827, #1f2937);
       color: white;
       padding: 90px 20px;
       text-align: center;
@@ -29,10 +29,21 @@
     }
 
     header p {
-      max-width: 780px;
+      max-width: 820px;
       margin: 0 auto 24px;
-      font-size: 1.2rem;
+      font-size: 1.18rem;
       opacity: 0.94;
+    }
+
+    .hero-statement {
+      max-width: 850px;
+      margin: 24px auto 0;
+      padding: 20px;
+      border-left: 5px solid white;
+      background: rgba(255,255,255,0.08);
+      text-align: left;
+      font-size: 1.08rem;
+      font-weight: bold;
     }
 
     .hero-buttons a {
@@ -72,7 +83,7 @@
     }
 
     main {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: 0 auto;
       padding: 42px 20px;
     }
@@ -91,16 +102,9 @@
       font-size: 1.8rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      background: #f3f4f6;
-      padding: 22px;
-      border-radius: 12px;
+    h3 {
+      margin-bottom: 6px;
+      color: #111827;
     }
 
     .button {
@@ -120,11 +124,32 @@
     }
 
     .quote {
-      font-size: 1.15rem;
+      font-size: 1.18rem;
       font-weight: bold;
       color: #111827;
       border-left: 5px solid #111827;
       padding-left: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #f3f4f6;
+      padding: 22px;
+      border-radius: 12px;
+    }
+
+    .alert {
+      background: #fef2f2;
+      border-left: 5px solid #991b1b;
+    }
+
+    .muted {
+      color: #4b5563;
     }
 
     footer {
@@ -150,32 +175,40 @@
     <a class="outline" href="timeline.html">View Timeline</a>
     <a class="outline" href="HOPWA-Q3-Q4-2025-Audit.pdf" target="_blank">Download Report</a>
   </div>
+
+  <div class="hero-statement">
+    This is a documented record of systemic failure within a federally funded housing program.
+    The issue is not whether housing is guaranteed. The issue is whether the program functioned as required.
+  </div>
 </header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#audit">Audit</a>
+  <a href="#findings">Findings</a>
   <a href="#timeline">Timeline</a>
-  <a href="#focus">Focus</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <main>
 
 <section id="about">
-  <h2>About This Work</h2>
+  <h2>About This Record</h2>
   <p>
     This site presents participant-prepared documentation concerning HOPWA program administration,
-    housing stability, grievance processes, and oversight accountability.
+    housing stability, reasonable accommodation handling, grievance processes, and oversight accountability.
   </p>
   <p>
-    The purpose is to preserve a clear public record, identify systemic failures, and support policy-level review.
+    The purpose is to preserve a public-facing record, identify systemic failures, and support review by program administrators,
+    oversight entities, advocates, and other appropriate stakeholders.
   </p>
 </section>
 
-<section>
+<section class="alert">
+  <h2>Core Issue</h2>
   <p class="quote">
-    This is not just a housing dispute. It is a documented breakdown in process, communication, oversight, and participant protection.
+    This is not just a housing dispute. It is a documented breakdown in process, communication,
+    oversight, and participant protection during a critical housing transition.
   </p>
 </section>
 
@@ -183,53 +216,86 @@
   <h2>HOPWA Audit Documentation</h2>
   <p>
     The Q3–Q4 2025 audit documents sponsor-level deficiencies, including lack of transition planning,
-    inconsistent communication, displacement risk, and absence of corrective action following notice.
+    inconsistent communication, displacement risk, reasonable accommodation process failure,
+    and absence of corrective action following notice.
   </p>
 
   <a class="button" href="audit.html">View Audit Summary</a>
   <a class="button secondary" href="HOPWA-Q3-Q4-2025-Audit.pdf" target="_blank">Download Full Audit</a>
 </section>
 
+<section id="findings">
+  <h2>Findings at a Glance</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Transition Planning Failure</h3>
+      <p>No documented exit plan or permanent-housing pathway was provided at term end.</p>
+    </div>
+
+    <div class="card">
+      <h3>Unwritten Rules</h3>
+      <p>Unwritten practices were treated as binding rules affecting housing stability.</p>
+    </div>
+
+    <div class="card">
+      <h3>Reasonable Accommodation Breakdown</h3>
+      <p>A requested accommodation was denied, then later approved, confirming feasibility.</p>
+    </div>
+
+    <div class="card">
+      <h3>Contradictory TBRA Communication</h3>
+      <p>Assistance was represented as unavailable, then later offered without clear explanation.</p>
+    </div>
+
+    <div class="card">
+      <h3>Displacement Pressure</h3>
+      <p>Housing instability escalated through notices and eviction-risk events after protected activity.</p>
+    </div>
+
+    <div class="card">
+      <h3>Grievance Governance Failure</h3>
+      <p>No reliable independent grievance pathway was identified or operationalized.</p>
+    </div>
+  </div>
+</section>
+
 <section id="timeline">
   <h2>Timeline of Program Failure</h2>
   <p>
     The timeline presents the sequence of events following the end of the program term,
-    showing how lack of planning and inconsistent administration escalated housing instability.
+    showing how lack of planning, inconsistent administration, and escalation failures affected housing stability.
   </p>
 
   <a class="button" href="timeline.html">View Timeline</a>
 </section>
 
-<section id="focus">
-  <h2>Focus Areas</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Program Oversight</h3>
-      <p>Reviewing whether publicly funded housing programs function as intended.</p>
-    </div>
-
-    <div class="card">
-      <h3>Participant Protection</h3>
-      <p>Documenting how administrative failures affect vulnerable participants.</p>
-    </div>
-
-    <div class="card">
-      <h3>Grievance Systems</h3>
-      <p>Evaluating whether complaint pathways provide real review or circular routing.</p>
-    </div>
-
-    <div class="card">
-      <h3>Policy Reform</h3>
-      <p>Using lived experience and documentation to identify needed systemic changes.</p>
-    </div>
-  </div>
+<section>
+  <h2>Why This Matters</h2>
+  <p>
+    Publicly funded housing programs exist to stabilize people, not push them through unclear processes,
+    undocumented standards, and circular grievance routes. When a program participant complies with documentation requests,
+    seeks assistance, and escalates concerns, the system should respond with clarity, planning, and accountability.
+  </p>
+  <p>
+    This record raises questions about whether program controls, grievance systems, accommodation procedures,
+    and oversight mechanisms functioned as intended.
+  </p>
 </section>
 
 <section>
   <h2>Current Status</h2>
   <p>
-    The Q3–Q4 2025 audit is complete and published. A Q1–Q2 2026 continuation review is in progress and will assess whether identified deficiencies were corrected following formal notice.
+    The Q3–Q4 2025 audit is complete and published. A Q1–Q2 2026 continuation review is in progress and will assess
+    whether identified deficiencies were corrected following formal notice.
+  </p>
+</section>
+
+<section>
+  <h2>Public Record Notice</h2>
+  <p>
+    This site serves as a public-facing record of participant-prepared documentation regarding HOPWA program administration
+    and oversight. Additional materials may be added as documentation develops.
   </p>
 </section>
 
@@ -245,7 +311,7 @@
 
 <section>
   <h2>Disclaimer</h2>
-  <p>
+  <p class="muted">
     This website provides general housing advocacy information and personal documentation of program-related experiences.
     It does not constitute legal advice, and no attorney-client relationship is formed.
   </p>
